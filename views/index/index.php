@@ -1,1 +1,5 @@
-<h1>I am the index baby</h1>
+<div class="col-md-12">
+	<div class="well">
+		<h1>I am the index!</h1>
+	</div>
+</div>

@@ -2,10 +2,12 @@
 
 // Define our base dirctory path
 define('BASE_PATH', dirname(realpath(__FILE__)));
+// Require config file
+require_once BASE_PATH . '/config/config.php';
 
-require BASE_PATH . '/libs/Init.php';
-require BASE_PATH . '/libs/Controller.php';
-require BASE_PATH . '/libs/View.php';
+function __autoload($class){
+	require_once BASE_PATH . "/libs/$class.php";
+}
 
 $init = new Init();
 
